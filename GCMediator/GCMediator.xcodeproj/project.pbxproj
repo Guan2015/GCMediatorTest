@@ -15,6 +15,8 @@
 		020812A71E895DF000566106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 020812A51E895DF000566106 /* LaunchScreen.storyboard */; };
 		020812B21E895DF000566106 /* GCMediatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 020812B11E895DF000566106 /* GCMediatorTests.m */; };
 		020812BD1E895DF000566106 /* GCMediatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 020812BC1E895DF000566106 /* GCMediatorUITests.m */; };
+		020812D01E8A151900566106 /* Target_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 020812CF1E8A151900566106 /* Target_A.m */; };
+		020812D31E8A153000566106 /* NSObject+GCMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 020812D21E8A153000566106 /* NSObject+GCMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		020812B81E895DF000566106 /* GCMediatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCMediatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		020812BC1E895DF000566106 /* GCMediatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCMediatorUITests.m; sourceTree = "<group>"; };
 		020812BE1E895DF000566106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		020812CE1E8A151900566106 /* Target_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_A.h; sourceTree = "<group>"; };
+		020812CF1E8A151900566106 /* Target_A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_A.m; sourceTree = "<group>"; };
+		020812D11E8A153000566106 /* NSObject+GCMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCMediator.h"; sourceTree = "<group>"; };
+		020812D21E8A153000566106 /* NSObject+GCMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCMediator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		0208128B1E895DF000566106 = {
 			isa = PBXGroup;
 			children = (
+				020812CB1E8A14FD00566106 /* A_module */,
 				020812961E895DF000566106 /* GCMediator */,
 				020812B01E895DF000566106 /* GCMediatorTests */,
 				020812BB1E895DF000566106 /* GCMediatorUITests */,
@@ -138,6 +145,34 @@
 				020812BE1E895DF000566106 /* Info.plist */,
 			);
 			path = GCMediatorUITests;
+			sourceTree = "<group>";
+		};
+		020812CB1E8A14FD00566106 /* A_module */ = {
+			isa = PBXGroup;
+			children = (
+				020812CC1E8A14FD00566106 /* action */,
+				020812CD1E8A14FD00566106 /* category */,
+			);
+			name = A_module;
+			path = ../A_module;
+			sourceTree = "<group>";
+		};
+		020812CC1E8A14FD00566106 /* action */ = {
+			isa = PBXGroup;
+			children = (
+				020812CE1E8A151900566106 /* Target_A.h */,
+				020812CF1E8A151900566106 /* Target_A.m */,
+			);
+			path = action;
+			sourceTree = "<group>";
+		};
+		020812CD1E8A14FD00566106 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				020812D11E8A153000566106 /* NSObject+GCMediator.h */,
+				020812D21E8A153000566106 /* NSObject+GCMediator.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +242,7 @@
 				TargetAttributes = {
 					020812931E895DF000566106 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M76VM3F3UD;
 						ProvisioningStyle = Automatic;
 					};
 					020812AC1E895DF000566106 = {
@@ -273,9 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020812D01E8A151900566106 /* Target_A.m in Sources */,
 				0208129F1E895DF000566106 /* ViewController.m in Sources */,
 				0208129C1E895DF000566106 /* AppDelegate.m in Sources */,
 				020812991E895DF000566106 /* main.m in Sources */,
+				020812D31E8A153000566106 /* NSObject+GCMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M76VM3F3UD;
 				INFOPLIST_FILE = GCMediator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.profile.GCMediator;
@@ -433,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M76VM3F3UD;
 				INFOPLIST_FILE = GCMediator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.profile.GCMediator;
